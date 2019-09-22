@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'Stilu' !important;
+  src: url('fonts/Stilu-Regular.eot');
+  src: url('fonts/Stilu-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-Regular.woff2') format('woff2'),
+      url('fonts/Stilu-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stilu-bold-oblique';
+  src: url('fonts/Stilu-BoldOblique.eot');
+  src: url('fonts/Stilu-BoldOblique.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-BoldOblique.woff2') format('woff2'),
+      url('fonts/Stilu-BoldOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stilu-oblique';
+  src: url('fonts/Stilu-Oblique.eot');
+  src: url('fonts/Stilu-Oblique.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-Oblique.woff2') format('woff2'),
+      url('fonts/Stilu-Oblique.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stilu-bold';
+  src: url('fonts/Stilu-Bold.eot');
+  src: url('fonts/Stilu-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-Bold.woff2') format('woff2'),
+      url('fonts/Stilu-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stilu-light';
+  src: url('fonts/Stilu-Light.eot');
+  src: url('fonts/Stilu-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-Light.woff2') format('woff2'),
+      url('fonts/Stilu-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stilu-semibold-oblique';
+  src: url('fonts/Stilu-SemiBoldOblique.eot');
+  src: url('fonts/Stilu-SemiBoldOblique.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-SemiBoldOblique.woff2') format('woff2'),
+      url('fonts/Stilu-SemiBoldOblique.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stilu-light-oblique';
+  src: url('fonts/Stilu-LightOblique.eot');
+  src: url('fonts/Stilu-LightOblique.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-LightOblique.woff2') format('woff2'),
+      url('fonts/Stilu-LightOblique.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stilu-semibold';
+  src: url('fonts/Stilu-SemiBold.eot');
+  src: url('fonts/Stilu-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Stilu-SemiBold.woff2') format('woff2'),
+      url('fonts/Stilu-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.App-background {
+  background-color: #FFB64C;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Stilu';
+  /* background-image: url("assets/app_background.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 8vh;
+  right: 8vw;
+  left: 8vw;
+  bottom: 0;
+  border-radius: 80px 80px 0px 0px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.App-panel-title-h1 {
+  font-size: 72px;
+  font-family: 'Stilu-bold';
+  margin: 0;
+}
+
+.App-panel-title-h2 {
+  font-size: 48px;
+  font-family: 'Stilu-bold';
+  margin: 0;
+}
+
+.App-panel-title-h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.App-panel-title-h4 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.App-panel-title-h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.App-panel-p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.App-panel-text-input {
+  width: 375px;
+  height: 60px;
+  min-height: 60px;
+  border-radius: 12px;
+  border: 2px solid #59D571;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  align-self: center;
+  margin-top: 6vh;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Stilu';
+}
+
+.App-panel-image-column {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 6vh;
+}
+
+.App-panel-cowboy {
+  width: 227px;
+  height: 335px;
+  margin-right: 4vw;
+  background-image: url("assets/panel_cowboy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Stilu';
+  background-image: url("assets/tooltip_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-stats-panels-wrapper {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-stat-panel {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 17.5vh;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
+}
+
+.App-stat-panel-title {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.App-greenbox-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Stilu';
+  background-image: url("assets/tooltip_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-greenhouse-modal-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.App-greenhouse-modal {
+  position: 'relative';
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  flex: 1;
+  align-self: stretch;
+  margin: 15vh 20vw;
+  border-radius: 20px;
+}
+
+.App-greenhouse-modal-row-item {
+  margin: 0 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 90px;
+}
+
+.App-greenhouse-modal-row-item-greenbox-image {
+  width: 110px;
+  height: 43px;
+  margin-right: 3vw;
+  background-image: url("assets/greenbox.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.App-greenhouse-modal-row-item-sunpanel-image {
+  width: 110px;
+  height: 70px;
+  margin-right: 3vw;
+  background-image: url("assets/sunPanel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-greenhouse-button {
+  display: flex;
+  width: 220px;
+  height: 180px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  position: absolute;
+  right: 245px;
+  bottom: 55px;
+}
+
+.App-finance-button {
+  display: flex;
+  width: 160px;
+  height: 200px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  position: absolute;
+  right: 150px;
+  top: 220px;
+}
+
+.App-stop-button {
+  display: flex;
+  width: 150px;
+  height: 60px;
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  position: absolute;
+  left: 59px;
+  top: 0;
+  z-index: 10000;
+}
+
+.App-greencar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Stilu';
+  background-image: url("assets/greenbox_car.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-sunPanel-wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  left: 200px;
+  width: 171px;
+  height: 135px;
+  flex-wrap: wrap;
+}
+
+.App-small-sunpanel {
+  width: calc(114px / 2);
+  height: calc(90px / 2);
+  background-image: url("assets/small_sunPanel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-sunPanel-info-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 50px;
+  left: 400px;
+  width: 262px;
+  height: 85px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.App-greenhouse-modal-buttons-columns {
+  flex-direction: row;
+  display: flex;
+  align-self: stretch;
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+}
+
+.App-loanpanel-info-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  right: 20px;
+  width: 262px;
+  height: 85px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.App-trade {
+  background-color: #0D74C8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Stilu';
+  /* background-image: url("assets/app_background.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.App-ranking-result-wrapper {
+  flex: 1;
+  display: 'flex';
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #D8D8D8;
+  border-bottom-width: 0;
+  margin-Left: 3vw;
+  margin-right: 3vw;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
